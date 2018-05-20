@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "electroharmonix";
+    src: url("fonts/electroharmonix-webfont.eot");
+    src: 
+    url("fonts/electroharmonix-webfont.woff") format("woff"),
+    url("fonts/electroharmonix-webfont.svg") format("svg");
+}
+@font-face {
+    font-family: "japanese";
+    src: url("fonts/japanese_3017.eot");
+    src: 
+    url("fonts/japanese_3017.woff") format("woff"),
+    url("fonts/japanese_3017.svg") format("svg");
+}
+* {
+    font-family: electroharmonix;
+}
+#home_main_img {
+    background: url(../img/code.jpg);
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+#nav_top li a:hover {
+    color:#00fff9;
+}
+
+#header_title{
+    padding-top: 150px;
+    text-align: center;
+}
+#nav_top {
+    padding: 10px 25px;
+    background-color: #191919;
+    height: 50px;
+    font-family: electroharmonix;
+}
+#nav_top ul {
+    list-style: none;
+    float: right;
+}
+
+#nav_top ul li {
+    display: inline;
+    padding-right: 10px;
+}
+
+#nav_top a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.mybtn{
+    background-color: #00fff9;
+    color: white;
+}
+.mybtn:hover {
+    color: black;
+}
+#about_me {
+    height: auto;
+    background-color: #00fff9;
+}
+.title {
+    width: 350px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+
+.about_me_content {
+    padding: 3%;
+}
+img{
+    max-width: 100%;
+    border: 1px solid black;
+}
+#presentation {
+    padding: 0px 30px;
+}
+
+#portfolio {
+    height: 400px;
+    background: #191919;
+}
+#contact {
+    height: 500px;
+    background-color: #00fff9;
+}
+footer {
+    background: #191919;
+}
+
+footer a {
+    padding: 0px 20px;
+}
+footer p, footer i:hover {
+    color: #00fff9;
+}
+footer i {
+    color: white;
+}
