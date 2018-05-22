@@ -12,10 +12,27 @@
     url("fonts/japanese_3017.woff") format("woff"),
     url("fonts/japanese_3017.svg") format("svg");
 }
+@media screen and (max-width: 400px) {
+    #nav_top ul {
+        list-style: none;
+        float: left;
+        padding: 5px;
+        font-size: 13px;
+    }
+    #home {
+        font-size: 7px;
+    }
+    #contact_form {
+        width: 90%;
+    }
+}
 html {
     font-family: "Times New Roman", Times, serif;
 }
 
+#home {
+    font-size: 20px;
+}
 #home_main_img {
     background: url(../img/code.jpg);
     background-size: cover;
@@ -47,6 +64,7 @@ html {
 #nav_top ul {
     list-style: none;
     float: right;
+    padding: 0px;
 }
 
 #nav_top ul li {
@@ -121,10 +139,10 @@ img{
     background-color: #00fff9;
 }
 #contact_form {
-    width: 500px;
+    max-width: 500px;
 }
 #contact_form > * {
-    margin-top: 10px;
+    margin: 10px 3px 0px 3px;
 }
 footer {
     background: #191919;
