@@ -1,5 +1,4 @@
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("nav_top").style.top = "0px";
@@ -44,3 +43,9 @@ $('#contact_btn').click(() => {
       scrollTop: $('#contact').offset().top
   }, 300);
 });
+$('.mybtn').click(() => {
+    $('html, body').animate({
+        scrollTop: $('#about_me').offset().top
+    }, 300);
+  });
+  

@@ -12,26 +12,12 @@
     url("fonts/japanese_3017.woff") format("woff"),
     url("fonts/japanese_3017.svg") format("svg");
 }
-@media screen and (max-width: 400px) {
-    #nav_top ul {
-        list-style: none;
-        float: left;
-        padding: 5px;
-        font-size: 13px;
-    }
-    #home {
-        font-size: 7px;
-    }
-    #contact_form {
-        width: 90%;
-    }
+* {
+    font-family: 'BioRhyme', serif;
 }
-html {
-    font-family: "Times New Roman", Times, serif;
-}
-
 #home {
-    font-size: 20px;
+    font-size: 22px;
+    font-family: electroharmonix;
 }
 #home_main_img {
     background: url(../img/code.jpg);
@@ -39,7 +25,6 @@ html {
     height: 500px;
     color: white;
     font-weight: bold;
-    font-family: electroharmonix;
 }
 #nav_top li:hover, a:hover {
     color:#00fff9;
@@ -55,7 +40,6 @@ html {
     padding: 10px 25px;
     background: rgba(54, 25, 25, 0.5);
     height: 50px;
-    font-family: electroharmonix;
     position: fixed;
     width: 100%;
     display:block;
@@ -85,11 +69,10 @@ html {
     background-color: #00fff9;
 }
 .title {
-    width: 350px;
+    width: 450px;
     padding-top: 50px;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
-    font-family: electroharmonix;
 }
 
 
@@ -125,6 +108,7 @@ img{
 .my_card {
     box-shadow: 0px 0px 0px 1px white;
     height: 300px;
+    width: 95%;
 }
 .card_btn {
     background: white;
@@ -156,4 +140,35 @@ footer p, footer i:hover {
 }
 footer i {
     color: white;
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        width: 95%;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        font-family: electroharmonix;
+    }
+    #nav_top {
+        height: 65px;
+        width: 100%;
+        padding: 5px 5px;
+    }
+    #nav_top ul {
+        list-style: none;
+        float: none;
+        display: table;
+        margin: 0px auto;
+        padding: 5px;
+        font-size: 13px;
+    }
+    #nav_top li {
+        padding-left: 15px;
+    }
+    #home {
+        font-size: 15px;
+    }
+    #contact_form {
+        width: 95%;
+    }
 }
