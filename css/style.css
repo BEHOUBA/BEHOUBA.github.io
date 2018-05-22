@@ -12,15 +12,21 @@
     url("fonts/japanese_3017.woff") format("woff"),
     url("fonts/japanese_3017.svg") format("svg");
 }
+html {
+    font-family: "Times New Roman", Times, serif;
+}
 
 #home_main_img {
     background: url(../img/code.jpg);
     background-size: cover;
     height: 500px;
     color: white;
+    font-weight: bold;
+    font-family: electroharmonix;
 }
-#nav_top li a:hover {
+#nav_top li:hover, a:hover {
     color:#00fff9;
+    cursor: pointer;
 }
 
 #header_title{
@@ -28,10 +34,15 @@
     text-align: center;
 }
 #nav_top {
-    padding: 20px 25px;
-    background: rgba(54, 25, 25, 0.3);
-    height: 100px;
+    z-index: 1;
+    padding: 10px 25px;
+    background: rgba(54, 25, 25, 0.5);
+    height: 50px;
     font-family: electroharmonix;
+    position: fixed;
+    width: 100%;
+    display:block;
+    transition: top 0.3s;
 }
 #nav_top ul {
     list-style: none;
@@ -43,18 +54,13 @@
     padding-right: 10px;
 }
 
-#nav_top a {
-    text-decoration: none;
-    color: white;
-}
-
-
 .mybtn{
+    margin-top: 50px;
     background-color: #00fff9;
-    color: white;
+    color: black;
 }
 .mybtn:hover {
-    color: black;
+    color: white;
 }
 #about_me {
     height: auto;
